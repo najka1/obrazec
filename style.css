@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  
+}
+html{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: #00704A;
+}
+hr{
+	border-top: 2px dotted #006241;
+}
+img{
+	float: left;
+	padding-right:20px;
+}
+#logo{
+	height:100px
+	
+}
+#logo:hover{
+    height:125px;
+}
+.menu1 a{
+	list-style: none;
+	font-family: "Gill Sans", sans-serif;
+	float: left;
+ 	padding: 12px;
+	color: white;
+	text-decoration: none;
+	width: 33,33%;
+	text-align: center;
+}
+.menu2 a{
+	list-style: none;
+	font-family: "Gill Sans", sans-serif;
+	float: left;
+ 	padding: 12px;
+	color: white;
+	text-decoration: none;
+	width: 33,33%;
+	text-align: center;
+	font-weight: bold;
+}
+h1{
+	font-size:30px;
+}
+.menu1{
+	font-size: 17px;
+	width:40%;
+	overflow: auto;
+}
+.menu2{
+	font-size: 22px;
+	width:35%;
+	overflow: auto;
+}
+.center {
+  display: block;
+  margin: auto;
+}
+h3{
+	font-size:20px;
+}
+.glavni{
+	/*padding-left:9px;
+	padding-right:9px;*/
+	padding: 45px;
+	padding-top: 10px;
+	position: absolute;
+	margin: auto;
+	width: 65%;
+	height: 65vh;
+	top: 56%;
+	background-color:white;
+	text-align: center;
+	color: #00704A;
+	border-radius:10px;
+	transform: translate(25%, -50%);
+	box-shadow: 10px 10px #006241;
+	font-family: "Gill Sans", sans-serif;
+}
+.drugi{
+	height:45%;
+	margin: auto;
+}
+.tretji{
+	height:35%;
+	margin: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;         /*za odstranitev puščic pri number*/
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.ikone{
+	float: left;
+	height: 55px;
+}
+.drinks{
+	float: left;
+	margin: auto;
+	width: 33.33%;
+	padding: 10px;
+	height: 80px;
+}
+.food{
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+	height: 50px;
+}
+.row{
+	margin: auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row1{
+	text-align: right;
+}
+.row1:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.roww{
+	text-align: center;
+}
+.col {
+	float: left;
+	width: 25%;
+	padding: 20px;
+	height: 100px;
+}
+.col1{
+	text-align: left;
+}
+.podnaslov{
+	font-weight:bold;
+}
+.login{
+	position: relative;
+	top: 0px;
+	vertical-align: middle;
+}
+#name1{
+	width: 180px;
+}
+#surname1{
+	width: 160px;
+}
+#mail{
+	width: 185px;
+}
+#password{
+	width: 155px;
+}
+#address{
+	width:165px;
+}
+#phone{
+	width:165px;
+}
+#surname{
+	width:165px;
+}
+#name{
+	width:165px;
+}
+#city{
+	width:165px;
+}
+#card{
+	width:165px;
+}
+#gmail{
+	width:165px;
+}
+#psswd{
+	width:165px;
+}
+.register{
+	position: relative;
+	top: 50px;
+	vertical-align: middle;
+}
+#button{
+	height: 40px;
+	width: 150px;
+	color: #00704A;
+	font-weight: bold;
+	background-color: white;
+}
+#button:hover{
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+	background-color:#00705980;
+	color: white;
+	border-color:white;
+}
+.footer { 
+    position: fixed; 
+    bottom: 0; 
+    right: 5px;
+    z-index: 10;
+	color: white;
+	font-family: "Gill Sans", sans-serif;
+}
+.poravnava{
+	text-align:left;
+}

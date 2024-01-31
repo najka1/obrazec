@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+	<title> Starbucks: Place your order </title>
+	<link rel="icon" type="image/x-icon" href="slike/icon.png">
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+
+</head>
+
+<body>
+	<!--<div class="naslov">STARBUCKS </div>-->
+	<img id="logo" src="slike/logo.png" alt="Starbucks" class="center">
+	<div class="menu1">
+		<a href="https://www.starbucks.com/contact/">Contact</a>
+		<a href="https://www.starbucks.com/about-us/">About us</a>
+		<a href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z">Find a store</a>
+	</div>
+	<div class="menu2">
+		<a href="menu.html">MENU</a>
+		<a href="https://www.starbucks.com/rewards">REWARDS</a>
+		<a href="https://www.starbucks.com/gift">GIFT CARDS</a>
+	</div>
+	<div class="glavni">
+		<div class="prvi">
+			<h1>PLACE YOUR ORDER</h1>
+			<hr>
+			<h3>LOG IN<h3>
+		</div>
+		<div class="roww">
+			
+				<label for="name1">Name:</label>
+				<input type="text" id="name1" name="name1" required><br><br>
+				<label for="surname1">Surname:</label>
+				<input type="text" id="surname1" name="surname1" required><br><br>
+				<label for="mail">Gmail:</label>
+				<input type="email" id="mail" name="mail" pattern=".+@email\.com" required><br><br>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required><br><br><br>
+				
+			
+		</div>
+		<div class="login">
+			<input type="submit" value="LOG IN" id="button" onclick="Check1()">
+		</div>
+		<br>
+		<hr>
+		<div class="drugi">
+			<h3>REGISTER</h3>
+			<div class="row1">
+				<div class="col">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required><br><br>
+					<label for="surname">Surname:</label>
+					<input type="text" id="surname" name="surname" required>
+				</div>
+				<div class="col">
+					<label for="address">Address:</label>
+					<input type="text" id="address" name="address" required><br><br>
+					<label for="city">City:</label>
+					<select name="city" id="city" required>
+						<option value="" disabled selected hidden>-----------</option>
+						<option value="New York">New York</option>
+						<option value="Oklahoma City">Oklahoma City</option>
+						<option value="San Francisco">San Francisco</option>
+						<option value="Chicago">Chicago</option>
+						<option value="Los Angeles">Los Angeles</option>
+						<option value="Las Vegas">Las Vegas</option>
+						<option value="Dallas">Dallas</option>
+						<option value="Boston">Boston</option>
+						<option value="Miami">Miami</option>
+						<option value="Orlando">Orlando</option>
+					</select>
+				</div>
+				<div class="col">
+					<label for="phone">Phone:</label>
+					<input type="number" id="phone" name="phone" placeholder="123-456-789" max="9" required><br><br>
+					<label for="card">Card :</label>
+					<input type="number" id="card" name="card" placeholder="XXXX-XXXX-XXXX-XXXX" max="16" required>
+				</div>
+				<div class="col">
+					<label for="gmail">Gmail:</label>
+					<input type="text" id="gmail" name="gmail" pattern=".+@email\.com" required><br><br>
+					<label for="psswd">Password :</label>
+					<input type="password" id="psswd" name="psswd" required>
+				</div>
+				<!--<div class="col">
+				<label for="dostava">Choose your delivery:</label><br>
+				<input type="radio" id="dostava1" name="dostava" value="Wolt">
+				<label for="dostava1">Wolt delivery</label>
+				<input type="radio" id="dostava2" name="dostava" value="standard">
+				<label for="dostava2">Starbucks delivery</label><br>
+				<input type="radio" id="prevzem" name="dostava" value="takeaway">
+				<label for="prevzem">Takeaway</label><br><br>
+
+			</div>-->
+			</div>
+			<div class="register">
+				<input type="submit" value="REGISTER" id="button" onclick="Check()">
+			</div>
+		</div>
+		
+	</div>
+
+	<script>
+
+		function Check() {
+
+			var ime = document.getElementById("name").value;
+			var priimek = document.getElementById("surname").value;
+			var naslov = document.getElementById("address").value;
+			var drzava = document.getElementById("city").value;
+			var telst = document.getElementById("phone").value;
+			var kartica = document.getElementById("card").value;
+
+			if (!ime || !priimek || !naslov || !drzava === "null" || !telst || !kartica) {
+				Swal.fire({
+					title: "ERROR",
+					text: "Please fill in all the fields!!",
+					icon: "error",
+					button: "OK!",
+					confirmButtonColor: " #00704A"
+				})
+				event.preventDefault();
+			}
+			else {
+				Swal.fire({
+					title: "Account successfully created",
+					text: "Your account has been successfully crated! You can collect cupons now!",
+					icon: "success",
+					button: "CONTINUE!",
+				});
+				event.preventDefault();
+
+				// Reset form fields
+				document.getElementById("name1").value = "";
+				document.getElementById("surname1").value = "";
+				document.getElementById("mail").value = "";
+				document.getElementById("password").value = "";
+			}
+		}
+
+		function Check1() {
+
+			var ime = document.getElementById("name1").value;
+			var priimek = document.getElementById("surname1").value;
+			var mail = document.getElementById("mail").value;
+			var password = document.getElementById("password").value;
+			
+
+			if (!ime || !priimek || !mail || !password) {
+				Swal.fire({
+					title: "ERROR",
+					text: "Please fill in all the fields!!",
+					icon: "error",
+					button: "OK!",
+					confirmButtonColor: " #00704A"
+				})
+				event.preventDefault();
+			}
+			else {
+				Swal.fire({
+					title: "Order successfully submitted",
+					text: "Your order has been successfully placed and the delivery person will deliver it to you as soon as possible!",
+					icon: "success",
+					button: "OK!",
+				});
+				event.preventDefault();
+
+				// Reset form fields
+				document.getElementById("name").value = "";
+				document.getElementById("surname").value = "";
+				document.getElementById("address").value = "";
+				document.getElementById("city").value = "-------";
+				document.getElementById("phone").value = "";
+				document.getElementById("card").value = "";
+}
+}
+
+	</script>
+
+	<div class="footer">Author: Nika Koren, 4.Ra </div>
+</body>
+
+</html>

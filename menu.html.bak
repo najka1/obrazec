@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <title> Starbucks: Place your order </title>
+    <link rel="icon" type="image/x-icon" href="slike/icon.png">
+    <link rel="stylesheet" href="style1.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+
+</head>
+
+<body>
+    <img id="logo" src="slike/logo.png" alt="Starbucks" class="center">
+    <div class="menu1">
+        <a href="https://www.starbucks.com/contact/">Contact</a>
+        <a href="https://www.starbucks.com/about-us/">About us</a>
+        <a href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z">Find a store</a>
+    </div>
+    <div class="menu2">
+        <a href="index.html">HOME</a>
+        <a href="https://www.starbucks.com/rewards">REWARDS</a>
+        <a href="https://www.starbucks.com/gift">GIFT CARDS</a>
+    </div>
+    <div class="glavni">
+        <div class="prvi">
+            <h1>CHOOSE YOUR FOOD & DRINK</h1>
+            <hr>
+           
+        </div>
+
+        <div class="drugi">
+            <h3>DRINKS</h3>
+            <div class="row">
+                <div class="drinks">
+                    HOT COFFEES <br>
+                    CAPPUCCINOS <br>
+                    <div class="poravnava"><img class="ikone" src="slike/cappucino.png" alt="Cappuccino">
+                        <input type="checkbox" id="coffee1" name="coffee1" value="cappuccino">
+                        <label for="coffee1"> Cappuccino</label><br><br><br>
+                    </div>
+                    AMERICANO <br>
+                    <div class="poravnava"><img class="ikone" src="slike/hotamericano.png" alt="Caffe Americano">
+                        <input type="checkbox" id="coffee4" name="coffee4" value="americano">
+                        <label for="coffee4"> Caffe Americano</label><br><br><br>
+                    </div>
+                    ESPRESSO SHOTS <br>
+                    <div class="poravnava"><img class="ikone" src="slike/espresso.png" alt="Espresso">
+                        <input type="checkbox" id="coffee2" name="coffee2" value="espresso">
+                        <label for="coffee2"> Espresso</label><br><br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/conpanna.png" alt="Espresso con Panna">
+                        <input type="checkbox" id="coffee3" name="coffee3" value="con panna">
+                        <label for="coffee3"> Espresso con Panna</label><br><br>
+                    </div>
+                </div>
+                <!--<div class="drinks">
+					
+
+				</div>-->
+                <div class="drinks">
+                    MACCHIATOS <br>
+                    <div class="poravnava"><img class="ikone" src="slike/applecrisp.png"
+                            alt="Apple Crisp Oatmilk Macchiato">
+                        <input type="checkbox" id="coffee5" name="coffee5" value="apple">
+                        <label for="coffee5"> Apple Crisp Oatmilk Macchiato</label><br><br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/caramel.png" alt="Caramel Macchiato">
+                        <input type="checkbox" id="coffee6" name="coffee6" value="caramel">
+                        <label for="coffee6">Caramel Macchiato</label><br><br><br>
+                    </div>
+                    HOT DRINKS <br>
+                    <!--STEAMERS <br>
+					<div class="poravnava"><img class="ikone" src="slike/pumpkinspice.png" alt="Pumpkin Spice Creme">
+						<input type="checkbox" id="hot5" name="hot5" value="pumpkin spice">
+						<label for="hot5">Pumpkin Spice Creme</label><br> <br>
+					</div>-->
+                    HOT CHOCOLATES <br>
+                    <div class="poravnava"><img class="ikone" src="slike/hotc.png" alt="Hot Chocolate">
+                        <input type="checkbox" id="hot1" name="hot1" value="chocolate">
+                        <label for="hot1"> Hot Chocolate</label><br><br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/whitec.png" alt="Whihe Hot Chocolate">
+                        <input type="checkbox" id="hot2" name="hot2" value="white">
+                        <label for="hot2"> White Hot Chocolate</label><br><br><br><br>
+                    </div>
+
+                </div>
+                <div class="drinks">
+                    HOT TEAS <br>
+                    GREEN TEAS <br>
+                    <div class="poravnava"><img class="ikone" src="slike/matcha.png" alt="Matcha Tea Latte">
+                        <input type="checkbox" id="tea1" name="tea1" value="matcha">
+                        <label for="tea1">Matcha Tea Latte</label><br><br><br>
+                    </div>
+                    CHAI TEAS <br>
+                    <div class="poravnava"><img class="ikone" src="slike/chai.png" alt="Chai Tea">
+                        <input type="checkbox" id="tea2" name="tea2" value="chai">
+                        <label for="tea2"> Chai Tea</label><br> <br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/chaitealatte.png" alt="Chai Tea Latte">
+                        <input type="checkbox" id="tea3" name="tea3" value="chai tea latte">
+                        <label for="tea3"> Chai Tea Latte</label><br> <br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/gingerbread.png" alt="Gingerbred Oatmilk Chai">
+                        <input type="checkbox" id="tea4" name="tea4" value="gingerbread oatmilk chai">
+                        <label for="tea3">Gingerbred Oatmilk Chai</label><br> <br><br>
+                    </div>
+
+                </div>
+                <!--<div class="drinks">
+			ICED COFFEES <br>
+			ICED ESPRESSO <br>
+			<div class="poravnava"><img class="ikone" src="slike/cespresso.png" alt="Iced Espresso">
+			<input type="checkbox" id="cold3" name="cold3" value="espresso">
+			<label for="cold3"> Iced Espresso</label><br><br><br></div>
+			ICED MACCHIATOS <br>
+			<div class="poravnava"><img class="ikone" src="slike/oatmilkmacchiato.png" alt="Iced Apple crisp Oatmilk Macchiato">
+			<input type="checkbox" id="cold5" name="cold5" value="crisp oatmilk">
+			<label for="cold5"> Iced Apple crisp Oatmilk Macchiato</label><br><br></div>
+			<div class="poravnava"><img class="ikone" src="slike/caramelmacchiato.png" alt="Iced Caramel Macchiato">
+			<input type="checkbox" id="cold6" name="cold6" value="caramel">
+			<label for="cold6"> Iced Caramel Macchiato</label><br><br></div>
+			
+			</div>	-->
+            </div>
+        </div>
+
+        <div class="tretji">
+            <h3>FOOD</h3>
+            <div class="row">
+                <div class="food">
+                    <span>
+                        <h3>BAKERY </h3>
+                        <h4>CAKE POPS</h4>
+                    </span>
+                    <div class="poravnava"><img class="ikone" src="slike/cookie.png" alt="Cookie & Cream Cake Pop">
+                        <input type="checkbox" id="pop1" name="pop1" value="cookie and cream">
+                        <label for="pop1"> Cookie & Cream Cake Pop</label><br><br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/birthday.png" alt="Birthday Cake Pop">
+                        <input type="checkbox" id="pop2" name="pop2" value="birthday">
+                        <label for="pop2"> Birthday Cake Pop</label><br><br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/chocolate.png" alt="Chocolate Cake Pop">
+                        <input type="checkbox" id="pop3" name="pop3" value="chocolate">
+                        <label for="pop3"> Chocolate Cake Pop</label><br><br><br>
+                    </div>
+                </div>
+                <div class="food">
+                    <h3>BAKERY</h3>
+                    <h4>CROISSANT</h4>
+                    <div class="poravnava"><img class="ikone" src="slike/bakedapple.png" alt="Baked Apple Croissant">
+                        <input type="checkbox" id="croissant1" name="croissant1" value="apple">
+                        <label for="croissant1"> Baked Apple Croissant</label><br><br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/ham.png" alt="Ham & Swiss Croissant">
+                        <input type="checkbox" id="croissant2" name="croissant2" value="ham and swiss">
+                        <label for="croissant2"> Ham & Swiss Croissant</label><br><br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/butter.png" alt="Butter Croissant">
+                        <input type="checkbox" id="croissant3" name="croissant3" value="butter">
+                        <label for="croissant3"> Butter Croissant </label><br><br><br>
+                    </div>
+                </div>
+                <div class="food">
+                    <h3>BREAKFAST</h3>
+                    <h4>BREAKFAST SANDWICHES </h4>
+                    <div class="poravnava"><img class="ikone" src="slike/chicken.png"
+                            alt="Chicken, Maple Butter & Egg Sandwich">
+                        <input type="checkbox" id="sandwich1" name="sandwich1" value="chicken">
+                        <label for="sandwich1"> Chicken, Maple Butter & Egg Sandwich</label><br><br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/bacon.png" alt="Bacon, Gouda & Egg Sandwich">
+                        <input type="checkbox" id="sandwich2" name="sandwich2" value="bacon">
+                        <label for="sandwich2"> Bacon, Gouda & Egg Sandwich</label><br><br><br>
+                    </div>
+                    <div class="poravnava"><img class="ikone" src="slike/turkey.png"
+                            alt="Turkey Bacon, Cheddar & Egg Whihe Sandwich">
+                        <input type="checkbox" id="sandwich3" name="sandwich3" value="turkey">
+                        <label for="sandwich3"> Turkey Bacon, Cheddar & Egg Whihe Sandwich </label><br><br><br>
+                    </div>
+                </div>
+                <!--<div class="food">
+				HOT BREAKFAST <br>
+				BREAKFAST WRAPS <br>
+				<div class="poravnava"><img class="ikone" src="slike/baconwrap.png" alt="Bacon, Sausage & Egg Wrap">
+					<input type="checkbox" id="wrap1" name="wrap1" value="bacon wrap">
+					<label for="wrap1">Bacon, Sausage & Egg Wrap</label><br><br>
+				</div>
+				<div class="poravnava"><img class="ikone" src="slike/whitewrap.png" alt="pinach, Feta & Egg White Wrap">
+					<input type="checkbox" id="wrap2" name="wrap2" value="egg whie wrap">
+					<label for="wrap2"> Spinach, Feta & Egg White Wrap</label><br><br><br>
+				</div>
+				<div class="poravnava"><img class="ikone" src="slike/avocado.png" alt="Avocado Spread">
+					<input type="checkbox" id="wrap3" name="wrap3" value="avocado">
+					<label for="wrap3"> Avocado Spread </label><br><br>
+				</div>
+			</div>-->
+                <!--<div class="food">
+				HOTBREAKFAST <br>
+				SOUS VIDE EGG BITES <br>
+				<div class="poravnava"><img class="ikone" src="slike/kale.png" alt="Kale & Mushroom Egg Bites">
+					<input type="checkbox" id="bites1" name="bites1" value="kale">
+					<label for="bites1"> Kale & Mushroom Egg Bites</label><br><br>
+				</div>
+				<div class="poravnava"><img class="ikone" src="slike/gruyeve.png" alt="Bacon & Gruyere Egg Bites">
+					<input type="checkbox" id="bites2" name="bites2" value="gruyere">
+					<label for="bites2"> Bacon & Gruyere Egg Bites</label><br><br><br>
+				</div>
+				<div class="poravnava"><img class="ikone" src="slike/redpepper.png"
+						alt="Egg White & Roasted Red Pepper Egg Bites">
+					<input type="checkbox" id="bites3" name="bites3" value="red pepper">
+					<label for="bites3"> Egg White & Roasted Red Pepper Egg Bites</label><br><br>
+				</div>
+			</div>-->
+                <br>
+
+
+            </div>
+            <div class="gumb">
+
+                <a href="index.html"><input type="button" value="BACK TO AN ORDER" id="button" onclick="Check()"></a><br>
+            </div>
+        </div>
+
+    </div>
+</body>
